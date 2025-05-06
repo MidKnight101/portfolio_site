@@ -315,6 +315,10 @@ hr{
         margin-left: 0 !important;
         width: 100% !important;
         padding: 1rem;
+        padding-top: 60px;
+    }
+    .resume-section:first-of-type{
+        padding-top: 60px;
     }
 }
 

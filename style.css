@@ -55,7 +55,7 @@
 }
 .profile-pic img{
     width: 100%;
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
     object-fit: cover;
@@ -273,13 +273,45 @@ hr{
 }
 
 .main{
-    margin-left: 250px;
+    margin-left:250px;
     padding: 40px;
     width: calc(100% - 250px);
     box-sizing: border-box;
-    min-height: 100vh;
-    height: auto;
 }
+
+@media(max-width: 768px){
+    .vertical-navbar{
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .vertical-navbar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .vertical-navbar li{
+        margin: 0.5rem;
+        list-style: none;
+    }
+
+    .main {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 1rem;
+    }
+}
+
+
 
 html, body{
     height: 100%;

@@ -281,7 +281,9 @@ hr{
 
 @media(max-width: 768px){
     .vertical-navbar{
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         width: 100%;
         min-height: auto;
         display: flex;
@@ -295,8 +297,13 @@ hr{
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        padding: 0;
+        padding: 0.5rem 0;
         margin: 0;
+        position: sticky;
+        top:0;
+        z-index: 1000;
+        background-color: #1f2937;
+
     }
 
     .vertical-navbar li{
